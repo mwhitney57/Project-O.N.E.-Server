@@ -1,0 +1,20 @@
+# fly.toml app configuration file generated for project-one-server on 2023-07-22T14:22:09-04:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "project-one-server"
+primary_region = "iad"
+kill_signal = "SIGTERM"
+auto_stop_machines = true
+auto_start_machines = false
+min_machines_running = 1
+
+[[services]]
+  internal_port = 8080
+  protocol = "tcp"
+
+  [[services.ports]]
+    handlers = ["tls", "http"]
+    port = "443"
+	

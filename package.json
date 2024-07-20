@@ -1,0 +1,21 @@
+{
+  "name": "project-one-server",
+  "version": "1.0.0",
+  "description": "Project O.N.E. Communications Backend",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.17.1",
+    "ws": "^7.5.0"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.3.3"
+  }
+}
